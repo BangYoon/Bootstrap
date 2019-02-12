@@ -34,7 +34,8 @@
       <li>7. 기본으로 가장 작은 small grid breakpoint에 맞춰진다.
     </p>
 
-    <!-- 예제 : 쌓이다가 수평으로 -->
+
+    <br><br><h4>예제 : 쌓이다가 수평으로</h4>
     <div class="row">
       <div class="col-md-1">.col-md-1</div>
       <div class="col-md-1">.col-md-1</div>
@@ -64,7 +65,7 @@
     </div>
 
 
-    <!-- 예제 : 유동 콘테이너 -->
+    <br><br><h4>예제 : 유동 콘테이너</h4>
     <div class="container">
       <div class="row">
         고정폭 콘테이너
@@ -76,8 +77,72 @@
       </div>
     </div>
 
-    <!-- 예제 : 모바일과 데스크탑 -->
 
+    <br><br><h4>예제 : 모바일과 데스크탑</h4>
+    <!-- 모바일에서 컬럼들이 하나는 꽉찬너비로, 다른 하나는 절반너비로 쌓이게 합니다 -->
+    <div class="row">
+      <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+
+    <!-- 컬럼들은 모바일에서 50% 너비로 시작하고 데스크탑에서는 33.3% 너비가 됩니다 -->
+    <div class="row">
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+
+    <!-- 컬럼들은 모바일과 데스크탑에서 항상 50% 너비가 됩니다 -->
+    <div class="row">
+      <div class="col-xs-6">.col-xs-6</div>
+      <div class="col-xs-6">.col-xs-6</div>
+    </div>
+
+
+    <br><br><h4>예제 : 모바일, 태블릿, 데스크탑</h4>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <!-- Optional: clear the XS cols if their content doesn't match in height -->
+      <div class="clearfix visible-xs-block"></div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+    </div>
+
+
+    <br><br><h4>예제 : 열 감싸기</h4>
+    <div class="row">
+      <div class="col-xs-9">.col-xs-9</div>
+      <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+      <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+    </div>
+
+
+    <br><br><h4>예제 : 반응형 컬럼 초기화</h4>
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+      <!-- 필요한 뷰포트에만 clearfix 를 추가하세요 -->
+      <div class="clearfix visible-xs-block"></div>
+      
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+      <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+      <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+    </div>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
