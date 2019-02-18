@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap-css-Form</title>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <h3>1. 기본 예제</h3>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">이메일 주소</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="이메일을 입력하세요">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">암호</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="암호">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputFile">파일 업로드</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">여기에 블록레벨 도움말 예제</p>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> 입력을 기억합니다
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-default, btn-success">제출</button>
+      </form>
+      <br><br>
+
+      <h3>2. 인라인 폼 : Name&Email</h3>
+      <form class="form-inline">
+      <div class="form-group">
+        <label for="exampleInputName2">Name</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail2">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+      </div>
+      <button type="submit" class="btn btn-default, btn-danger">Send invitation</button>
+      </form>
+      <br><br>
+
+
+      <h3>3. 인라인 폼 : ID&Password</h3>
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputEmail3">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputPassword3">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default, btn-dark">Sign in</button>
+        </form>
+        <br><br>
+
+      <h3>4. 인라인 폼 : Amount</h3>
+      <form class="form-inline">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+          <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+          <div class="input-group-addon">.00</div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Transfer cash</button>
+      </form>
+      <br><br>
+
+
+      <h3>5. 수평 폼</h3>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Sign in</button>
+          </div>
+        </div>
+      </form>
+      <br><br>
+
+
+      <h3>6. Textarea</h3>
+      <textarea class="form-control" rows="3"></textarea>
+      <br><br>
+
+
+      <h3>7. 체크박스와 라디오</h3>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="">
+          Option one is this and that&mdash;be sure to include why it's great
+        </label>
+      </div>
+      <div class="checkbox disabled">
+        <label>
+          <input type="checkbox" value="" disabled>
+          Option two is disabled
+        </label>
+      </div>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+          Option one is this and that&mdash;be sure to include why it's great
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          Option two can be something else and selecting it will deselect option one
+        </label>
+      </div>
+      <div class="radio disabled">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+          Option three is disabled
+        </label>
+      </div>
+      <br><br>
+
+
+      <h3>8. 인라인 체크박스와 라디오</h3>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+      </label>
+
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+      </label>
+      <br><br>
+
+
+      <h3>9. 라벨 텍스트 없는 체크박스와 라디오</h3>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+        </label>
+      </div>
+      <br><br>
+
+
+      <h3>10. 셀렉트</h3>
+      <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <br><br>
+
+
+      <h3>10. 셀렉트 - multiple</h3>
+      <select multiple class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <br><br>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>
