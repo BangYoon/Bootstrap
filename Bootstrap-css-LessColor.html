@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ko">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap-css-Less-color</title>
+
+    <style media="screen">
+      // 그대로 사용
+      .masthead {
+        background-color: @brand-primary;
+      }
+
+      // Less 에서 변수를 재할당
+      //  @alert-message-background: @brand-info;
+      //  .alert {
+      //    background-color: @alert-message-background;
+      //  }
+
+
+      //무채색
+      @gray-darker:  lighten(#000, 13.5%); // #222
+      @gray-dark:    lighten(#000, 20%);   // #333
+      @gray:         lighten(#000, 33.5%); // #555
+      @gray-light:   lighten(#000, 46.7%); // #777
+      @gray-lighter: lighten(#000, 93.5%); // #eee
+
+      //유채색
+      @brand-primary: darken(#428bca, 6.5%); // #337ab7
+      @brand-success: #5cb85c;
+      @brand-info:    #5bc0de;
+      @brand-warning: #f0ad4e;
+      @brand-danger:  #d9534f;
+    </style>
+  </head>
+
+
+  <body>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>
