@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ko">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap-css-Media객체</title>
+    <style media="screen">
+     //반응형 브레이크 포인트
+
+      // Extra small devices (portrait phones, 576px 미만)
+      // 부트스트랩의 기본값이므로 미디어 쿼리가 없습니다.
+
+      // Small devices (landscape phones, 576px 이상)
+      @media (min-width: 576px) {}
+
+      // Medium devices (tablets, 768px 이상)
+      @media (min-width: 768px) {}
+
+      // Large devices (desktops, 992px 이상)
+      @media (min-width: 992px) {}
+
+      // Extra large devices (large desktops, 1200px 이상)
+      @media (min-width: 1200px) {}
+
+
+//다른 방향 미디어 쿼리
+      // Extra small devices (portrait phones, 576px 미만)
+      @media (max-width: 575px) {}
+
+      // Small devices (landscape phones, 768px 미만)
+      @media (max-width: 767px) {}
+
+      // Medium devices (tablets, 992px 미만)
+      @media (max-width: 991px) {}
+
+      // Large devices (desktops, 1200px 미만)
+      @media (max-width: 1199px) {}
+      // Extra large devices (large desktops)
+      // extra-large 브레이크 포인트에는 너비의 상한이 없으므로 미디어쿼리를 적용하지 않습니다.
+
+
+      @media(Max-width:500px)
+      {
+        .content{
+          flex-direction:column;
+        }
+        .content nav, .content aside{
+            border:1px solid gray;
+            flex-basis:auto;
+        }
+        main{
+          order:0;
+        }
+        nav{
+          order:1;
+        }
+        aside{
+          order:2;
+          display:none;
+        }
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="media">
+      <img class="mr-3" src="..." alt="임시 이미지">
+      <div class="media-body">
+        <h5 class="mt-0">미디어 헤드라인</h5>
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
+      </div>
+    </div>
+
+    <h3>중첩</h3>
+    <div class="media">
+      <img class="mr-3" src="..." alt="임시 이미지">
+      <div class="media-body">
+        <h5 class="mt-0">미디어 헤드라인</h5>
+        동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
+
+        <div class="media mt-3">
+          <a class="pr-3" href="#">
+            <img src="..." alt="임시 이미지">
+          </a>
+          <div class="media-body">
+            <h5 class="mt-0">미디어 헤드라인</h5>
+            동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+    <h3>상단 정렬 미디어</h3>
+    <div class="media">
+      <img class="align-self-start mr-3" src="..." alt="임시 이미지">
+      <div class="media-body">
+        <h5 class="mt-0">상단 정렬 미디어</h5>
+        <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+        <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세.</p>
+      </div>
+    </div>
+    <br>
+
+    <h3>가운데 정렬 미디어</h3>
+    <div class="media">
+      <img class="align-self-center mr-3" src="..." alt="임시 이미지">
+      <div class="media-body">
+        <h5 class="mt-0">가운데 정렬 미디어</h5>
+        <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+        <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세.</p>
+      </div>
+    </div>
+    <br>
+
+    <h3>하단 정렬 미디어</h3>
+    <div class="media">
+      <img class="align-self-end mr-3" src="..." alt="임시 이미지">
+      <div class="media-body">
+        <h5 class="mt-0">하단 정렬 미디어</h5>
+        <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세.</p>
+        <p class="mb-0">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려 강산 대한사람 대한으로 길이 보전하세. 남산 위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리 기상일세.</p>
+      </div>
+    </div>
+    <br>
+
+
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+           <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+           </nav>
+           <main class="border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam totam labore ipsum, nesciunt temporibus repudiandae facilis earum, sunt autem illum quam dolore, quae optio nemo vero quidem animi tempore aliquam voluptas assumenda ipsa voluptates. Illum facere dolor eos, corporis nobis, accusamus velit, similique cum iste unde vero harum voluptatem molestias excepturi. Laborum beatae, aliquid aliquam excepturi pariatur soluta asperiores laudantium iste, architecto ducimus fugiat sed, lit totam, temporibus ad magnam minus, quis nesciunt aperiam veritatis. Vitae porro provident magni eos sit sed dignissimos iure natus odio nostrum molestiae atque mollitia saepe adipisci ut velit quo hic fuga ex, voluptates vel eum ipsum amet, sunt corporis. Maxime odit alias, ratione tenetur, asperiores consequuntur deserunt modi velit ab maiores pariatur voluptates beatae aut nesciunt perspiciatis sed veritatis doloremque quibusdam amet vero. Qui, labore. Atque ratione quae ducimus reprehenderit perferendis nisi earum, debitis commodi maxime sequi facere optio doloribus, repudiandae ex quidem amet iusto inventore quaerat at praesentium sint. Omnis mollitia esse illum suscipit, quis dolorem maxime sunt eaque, autem nisi corrupti perferendis provident tempore quas, unde! Doloribus, at, accusamus, maiores enim amet quod provident temporibus atque, ipsam fugiat incidunt. Quasi iusto ea quibusdam eveniet porro officiis dicta fugiat fugit laudantium ipsum esse quisquam quo laboriosam odit voluptates alias veritatis expedita quidem consectetur eos, impedit, incidunt dolorum? Laborum, facere nulla ullam, aliquid rerum nihil non adipisci, architecto obcaecati iure quam, fuga minus alias eligendi provident ex odio sit. Ducimus, facilis veritatis numquam, maxime quos natus animi, a magnam itaque veniam pariatur sed alias eos quas? Voluptatum fugit doloribus fugiat iste adipisci quidem odit consectetur, sapiente culpa magnam laborum, laboriosam exercitationem cupiditate dignissimos, nisi doloremque hic itaque aspernatur. Ab labore dolorum cumque rem vitae repellat quo quae porro cupiditate minus. Perspiciatis cumque sequi provident fugit. Nulla reiciendis voluptates molestiae corporis voluptate, quidem consequuntur, dolor vero necessitatibus deleniti tempora ab facilis similique, ea error deserunt fuga quia atque omnis nam earum non, illo. Minima quos optio nostrum eos aperiam? Quam, obcaecati velit deserunt tempore, iure vitae repudiandae quos illum quasi esse quas quaerat at consectetur necessitatibus. Cum, quod, dolore voluptatibus quibusdam accusamus aliquam consequatur dolorum illo! Sequi commodi adipisci explicabo soluta necessitatibus magni expedita cumque, officiis voluptas, vel amet recusandae sunt, quidem eum aliquid deleniti unde, impedit non magnam consectetur est minima facere architecto. Molestias cum vero nostrum saepe, dignissimos eius beatae natus fugiat deserunt esse, nesciunt eos ducimus id amet magnam possimus? Optio adipisci quisquam earum totam nemo sunt provident iure ab consectetur et deleniti molestiae blanditiis laudantium, autem consequatur rerum labore ipsa ipsam deserunt nisi, expedita doloremque quibusdam! Illo nemo laborum a sequi in, ad ipsum blanditiis alias! Eaque eos eligendi hic dolorum sint, tempore voluptatum ut numquam. Corporis similique itaque accusantium, esse porro ea dolor, quae consequ laudantium, tempore cupiditate quod consectetur! Voluptas enim laboriosam nesciunt rem. Recusandae beatae numquam asperiores adipisci neque, vel pariatur suscipit provident, a est magni. Laborum dolore incidunt saepe ipsam? Eveniet doloremque animi maxime aliquid rem fugit dolor dignissimos! Quo, ut quod ab.
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>
