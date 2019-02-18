@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap-css-Form2</title>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <h3>11. 정적 콘트롤 : p 태그에 form-control-static 클래스</h3>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label class="col-sm-1 control-label">Email</label>
+          <div class="col-sm-4">
+            <p class="form-control-static">email@example.com</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          </div>
+        </div>
+      </form>
+      <br><br>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only">Email</label>
+          <p class="form-control-static">email@example.com</p>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword2" class="sr-only">Password</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Confirm identity</button>
+      </form>
+      <br><br>
+
+
+      <h3>12. 비활성화 상태(Disabled state) : disabled 속성 추가</h3>
+      <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled><br><br>
+
+
+      <h3>13. 비활성화된 필드셋 : fieldset 태그에 disabled 속성 추가</h3>
+      <!-- 비활성 필드셋-->
+      <fieldset disalbed>
+        <!-- 비활성 텍스트 박스-->
+        <label for="disabledTextInput">Disabled Input</label>
+        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        <!-- 비활성 선택 메뉴-->
+        <label for="disabledSelect">Disabled select menu</label>
+        <select id="disabledSelect" class="form-control">
+          <option>Disabled select</option>
+        </select>
+        <!-- 비활성 체크박스-->
+        <div class="checkbox">
+            <label>
+              <input type="checkbox"> Can't check this.
+            </label>
+        </div>
+        <!-- 비활성 버튼-->
+        <button type="submit" class="btn btn-primary">비활성 버튼</button>
+      </fieldset><br><br>
+
+
+      <h3>14. 읽기전용 상태 : input 태그에 readonly 속성추가</h3>
+      <input class="form-control" type="text" placeholder="Readonly input here..." readonly>
+      <br><br>
+
+      <h3>15. 유효 상태 : div class에 has-warning / has-error / has-success 클래스 추가</h3>
+      <!-- 폼콘트롤 Text 박스 상의 에러, 경고, 성공 상태 스타일-->
+      <div class="form-group has-success">
+        <label class="control-label" for="inputSuccess1">Input with success</label>
+        <input type="text" class="form-control" id="inputSuccess1">
+      </div>
+      <div class="form-group has-warning">
+        <label class="control-label" for="inputWarning1">Input with warning</label>
+        <input type="text" class="form-control" id="inputWarning1">
+      </div>
+      <div class="form-group has-error">
+        <label class="control-label" for="inputError1">Input with error</label>
+        <input type="text" class="form-control" id="inputError1">
+      </div>
+      <!-- 폼콘트롤 체크 박스 상의 에러, 경고, 성공 상태 스타일 -->
+      <div class="has-success">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="checkboxSuccess" value="option1">
+            Checkbox with success
+          </label>
+        </div>
+      </div>
+      <div class="has-warning">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="checkboxWarning" value="option1">
+            Checkbox with warning
+          </label>
+        </div>
+      </div>
+      <div class="has-error">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="checkboxError" value="option1">
+            Checkbox with error
+          </label>
+        </div>
+      </div><br><br>
+
+
+        <h3>16. 보조 아이콘 : input class="form-control"에 has-feedback 클래스 추가</h3>
+        <form class="form-horizontal">
+          <div class="form-group has-success has-feedback">
+            <label class="control-label col-sm-3" for="inputSuccess3">Input with success</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+              <span id="inputSuccess3Status" class="sr-only">(success)</span>
+            </div>
+          </div>
+          <div class="form-group has-success has-feedback">
+            <label class="control-label col-sm-3" for="inputGroupSuccess2">Input group with success</label>
+            <div class="col-sm-9">
+              <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+              </div>
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+              <span id="inputGroupSuccess2Status" class="sr-only">(success)</span>
+            </div>
+          </div>
+        </form><br><br>
+
+
+        <h3>17. 열 크기조절</h3>
+        <div class="row">
+          <div class="col-sm-2">
+            <input type="text" class="form-control" placeholder=".col-sm-2">
+          </div>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" placeholder=".col-sm-3">
+          </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" placeholder=".col-sm-4">
+          </div>
+        </div><br><br>
+
+
+        <h3>18. 도움말</h3>
+        <label class="sr-only" for="inputHelpBlock">Input with help text</label>
+        <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+        ...
+        <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+        <br><br>
+
+
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>
