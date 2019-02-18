@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap-css-HelperClass</title>
+
+    <style media="screen">
+      //간편한 float
+      .pull-left {
+        float: left !important;
+      }
+      .pull-right {
+        float: right !important;
+      }
+      // Usage as mixins
+      .element {
+        .pull-left();
+      }
+      .another-element {
+        .pull-right();
+      }
+
+
+      //중앙정렬
+      .center-block {
+        //display: block;
+        margin-left: auto
+        margin-right: auto;
+      }
+      // Usage as a mixin
+      .element {
+        .center-block();
+      }
+
+
+      //클리어픽스
+      // Mixin itself
+      .clearfix() {
+        &:before,
+        &:after {
+          content: " ";
+          display: table;
+        }
+        &:after {
+          clear: both;
+        }
+      }
+
+      // Usage as a mixin
+      .element {
+        .clearfix();
+      }
+
+
+      //콘텐츠 show & hidden
+      .show {
+        display: block !important;
+      }
+      .hidden {
+        display: none !important;
+        visibility: hidden !important;
+      }
+      .invisible {
+        visibility: hidden;
+      }
+      // Usage as mixins
+      .element {
+        .show();
+      }
+      .another-element {
+        .hidden();
+      }
+
+
+      //스크린 리더와 키보드 네비게이션 콘텐츠
+      .skip-navigation{
+        .sr-only();
+        sr-only-focusable();
+      }
+
+
+      //이미지 대체
+      .heading{
+        .text-hide();
+      }
+    </style>
+  </head>
+
+
+
+  <body>
+    <h1> 핼퍼 클래스 </h1>
+
+    <h3>1. 닫기 아이콘</h3>
+    <button type="button" class="close" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <br><br>
+
+    <h3>2. 캐럿</h3>
+    <span class="caret">왜안나오징</span>
+    <br><br>
+
+    <h3>3. 간편한 float</h3>
+    <div class="pull-left">pull-left</div>
+    <div class="pull-right">pull-right</div>
+    <br><br>
+
+    <h3>4. 콘텐츠 블록 중앙정렬</h3>
+    <div class="center-block">중앙정렬</div>
+    <br><br>
+
+    <h3>5. Clearfix</h3>
+    <!-- Usage as a class -->
+    <div class="clearfix">클리어픽스다이말이야</div>
+    <br><br>
+
+    <h3>6. 콘텐츠 보이고 숨기기</h3>
+    <div class="show">콘텐츠 보이노</div>
+    <div class="hidden">콘텐츠 안보이노</div>
+    <br><br>
+
+    <h3>7. 스크린 리더와 키보드 네비게이션 콘텐츠</h3>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <br><br>
+
+    <h3>8. 이미지 대체</h3>
+    <h1 class="text-hide">Custom heading</h1>
+    <br><br>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>
