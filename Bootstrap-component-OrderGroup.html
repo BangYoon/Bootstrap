@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>Bootstrap-component-OrderGroup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  </head>
+
+
+  <body>
+    <h2>1. 기본 예제</h2>
+    <ul class="list-group">
+      <li class="list-group-item">방윤</li>
+      <li class="list-group-item">이나연</li>
+      <li class="list-group-item">박수진</li>
+      <li class="list-group-item">하민주</li>
+    </ul>
+    <br><br><br>
+
+
+    <h2>2. 활성/비활성 항목</h2>
+    <ul class="list-group">
+      <li class="list-group-item active">방윤</li>
+      <li class="list-group-item">이나연</li>
+      <li class="list-group-item disabled">박수진</li>
+      <li class="list-group-item">하민주</li>
+    </ul>
+    <br><br><br>
+
+
+    <h2>3. 링크</h2>
+    <div class="list-group">
+      <a href="file:///C:/Bootstrap/bootstrap-4.2.1-dist/Bootstrap-component/OrderGroup.html" class="list-group-item list-group-item-action active">방윤</a>
+      <a href="#" class="list-group-item list-group-item-action">이나연</a>
+      <a href="#" class="list-group-item list-group-item-action">박수진</a>
+      <a href="#" class="list-group-item list-group-item-action disabled">하민주</a>
+    </div>
+    <br><br><br>
+
+
+    <h2>4. 버튼</h2>
+    <div class="list-group">
+      <button type="button" href="#" class="list-group-item list-group-item-action active">방윤</a>
+      <button type="button" href="#" class="list-group-item list-group-item-action">이나연</a>
+      <button type="button" href="#" class="list-group-item list-group-item-action">박수진</a>
+      <button type="button" href="#" class="list-group-item list-group-item-action disabled">하민주</a>
+    </div>
+    <br><br><br>
+
+
+    <h2>5. Contextual classes</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
+      <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+      <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
+      <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
+    </ul>
+    <br><br><br>
+
+
+    <h2>6. JavaScript behavior</h2>
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">방윤</div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">박수진</div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">이나연</div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">하민주</div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>
