@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>Bootstrap-utility-Flex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  </head>
+
+
+  <body>
+    <h2>1. Enable flex behaviors</h2>
+    <h4>(1) 꽉찬 경우</h4>
+    <div class="d-flex p-2 border">I'm a flexbox container!</div>
+    <br><br>
+    <h4>(2) 글씨만큼만</h4>
+    <div class="d-inline-flex border">I'm an inline flexbox container!</div>
+    <div class="d-inline-flex p-1 border">I'm an inline flexbox container!</div>
+    <div class="d-inline-flex p-2 border">I'm an inline flexbox container!</div>
+    <div class="d-inline-flex p-3 border">I'm an inline flexbox container!</div>
+    <br><br>
+    <div class="d-sm-inline-flex border">I'm an inline flexbox container!</div>
+    <div class="d-md-inline-flex border">I'm an inline flexbox container!</div>
+    <div class="d-lg-inline-flex border">I'm an inline flexbox container!</div>
+    <div class="d-xl-inline-flex border">I'm an inline flexbox container!</div>
+    <br><br><br>
+
+
+    <h2>2. Direction</h2>
+    <div class="border border-dark">
+      <div class="d-flex flex-row">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+      <div class="d-flex flex-row-reverse">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+    </div>
+    <br><br>
+    <div class="border border-dark">
+      <div class="d-flex flex-column">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+      <br>
+      <div class="d-flex flex-column-reverse">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+    </div>
+    <br><br><br>
+
+
+    <h2>3. Justify content</h2>
+    <div class="border border-dark">
+      <div class="d-flex justify-content-start">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-end">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-around">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+    </div>
+    <br><br><br>
+
+
+    <h2>4. Align items</h2>
+    <div class="border border-dark">
+      <div class="d-flex align-items-start">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+      <div class="d-flex align-items-end">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+        <p></p>
+      </div>
+      <div class="d-flex align-items-center">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+      <div class="d-flex align-items-baseline">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+      <div class="d-flex align-items-stretch">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="p-2 border">Flex item 2</div>
+        <div class="p-2 border">Flex item 3</div>
+      </div>
+    </div>
+    <br><br><br>
+
+
+    <h2>5. Align self</h2>
+    <div class="border border-dark">
+      <div class="d-flex align-items-start">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="align-self-start border">Aligned flex item</div>
+        <div class="p-2 border">Flex item 2</div>
+      </div>
+      <div class="d-flex align-items-start">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="align-self-end border">Aligned flex item</div>
+        <div class="p-2 border">Flex item 2</div>
+      </div>
+      <div class="d-flex align-items-start">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="align-self-start border">Aligned flex item</div>
+        <div class="p-2 border">Flex item 2</div>
+      </div>
+      <div class="d-flex align-items-start">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="align-self-center border">Aligned flex item</div>
+        <div class="p-2 border">Flex item 2</div>
+      </div>
+      <div class="d-flex align-items-start">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="align-self-baseline border">Aligned flex item</div>
+        <div class="p-2 border">Flex item 2</div>
+      </div>
+      <div class="d-flex align-items-start">
+        <div class="p-2 border">Flex item 1</div>
+        <div class="align-self-stretch border">Aligned flex item</div>
+        <div class="p-2 border">Flex item 2</div>
+      </div>
+    </div>
+    <br><br><br>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>
