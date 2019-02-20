@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>Bootstrap-component-Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  </head>
+
+
+  <body>
+    <h2>1. 기본 폼 소개</h2>
+    <form>
+      <div class="form-group">
+        <label for="InputEmail">Email address</label>
+        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="InputPassword">Password</label>
+        <input type="password" class="form-control" placeholder="Password">
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">Check me out!
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary" name="button">Submit</button>
+    </form>
+    <br><br><br>
+
+
+    <h2>2. 폼 컨트롤</h2>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Example select</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Example multiple select</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </form><br><br><br>
+
+
+    <h2>3. 파일 input</h2>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Example file input</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+    </form><br><br><br>
+
+
+    <h2>4. 폼 크기 조정</h2>
+    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+    <input class="form-control" type="text" placeholder="Default input">
+    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+    <br><br>
+
+    <select class="form-control form-control-lg">
+      <option>Large select</option>
+    </select>
+    <select class="form-control">
+      <option>Default select</option>
+    </select>
+    <select class="form-control form-control-sm">
+      <option>Small select</option>
+    </select>
+    <br><br><br>
+
+
+    <h2>5. 읽기전용 폼</h2>
+    <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+    <br><br><br>
+
+
+    <h2>6. 체크박스</h2>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" value="">
+        Option one is this and that&mdash;be sure to include why it's great
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" value="">
+        Option two is this and that&mdash;be sure to include why it's great
+      </label>
+    </div>
+    <div class="form-check disabled">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" value="" disabled>
+        Option two is disabled
+      </label>
+    </div>
+    <br><br><br>
+
+
+    <h2>7. Inline 체크박스</h2>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> 1
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> 2
+      </label>
+    </div>
+    <div class="form-check form-check-inline disabled">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> 3
+      </label>
+    </div>
+    <br><br><br>
+
+
+    <h2>8. 라디오</h2>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        Option one is this and that&mdash;be sure to include why it's great
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        Option two can be something else and selecting it will deselect option one
+      </label>
+    </div>
+    <div class="form-check disabled">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+        Option three is disabled
+      </label>
+    </div>
+    <br><br><br>
+
+
+
+    <h2>9. Inline 라디오</h2>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+      </label>
+    </div>
+    <div class="form-check form-check-inline disabled">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> 3
+      </label>
+    </div>
+    <br><br><br>
+
+
+    <h2>10. without labels</h2>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+      </label>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>
